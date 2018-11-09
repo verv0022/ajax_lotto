@@ -6,18 +6,18 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-    <div id="home" class="page">
+    <div id="home" class="page active" >
         <header>
             <h1>Lotto Numbers</h1>
         </header>
         <section class="main">
             <p class="formBox">
                 <label for="digits">Number of Digits</label>
-                <input id="digits" type="number" max="10" min="1" placeholder="6" />
+                <input id="digits" type="number" max="10" min="1" placeholder="10" class="sm"/>
             </p>
             <p class="formBox">
                 <label for="max">Range</label>
-                <span>1 to </span><input id="max" type="number" min="2" max="99" placeholder="49" />
+                <span>1 to </span><input id="max" type="number" min="2" max="99" placeholder="99" class="sm"  />
             </p>
             <p class="formBox buttons">
                 <button id="btnSend">Generate Numbers</button>
@@ -28,7 +28,7 @@
         <header>
             <h1>Lotto Numbers</h1>
         </header>
-        <section class="main">
+        <section class="main" id="randNumList">
             <p id="errorMessage"></p>
             <ul class="num_list">
                 <!-- display the generated numbers from the server -->

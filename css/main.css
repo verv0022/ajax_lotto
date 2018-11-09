@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Berkshire Swash, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+
+}
+
+button {
+    width: 100px;
+}
+
+
+img,
+button {
+    margin: 2em auto;
+    display: block;
+}
+
+header {}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.formBox {
+    display: flex;
+    justify-content: center;
+}
+
+label,
+span {
+    margin-right: .5em;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+}
+
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main {
+    flex-grow: 1;
+
+}
+
+
+main,
+footer {
+    flex-shrink: 0;
+    
+}
+
+header{
+    
+    
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: 10px solid black;
+    margin: 1rem;
+    
+   background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,200,250,1));
+
+}
+
+li {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0, 1));
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    margin: 1rem;
+}
+
+button {
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    border: 2px solid black;
+    padding: 0.5rem;
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px black;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0, 1));
+    color: white;
+    font-family: Berkshire Swash, Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+@media (max-width: 599px) {
+
+
+    ul {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 10%;
+        border-radius: 100%;
+        border: 2px solid black;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+
+
+    }
+
+    button {
+        width: 50%;
+    }
+
+}
+
+
+@media (min-width: 600px) and (max-width:999px) {
+    ul {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    li {
+
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        width: 5%;
+        border-radius: 100%;
+        border: 2px solid black;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+
+    }
+
+    button {
+        width: 40%;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+    ul {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    li {
+
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        width: 4%;
+        border-radius: 100%;
+        border: 2px solid black;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+
+
+
+    }
+
+    button {
+        width: 40%;
+    }
+
+}
