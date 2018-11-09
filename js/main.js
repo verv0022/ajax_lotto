@@ -49,7 +49,7 @@ function getCake() {
     formData.append("digits", numberofDigits);
     formData.append("max", range);
 
-    let url = "http://davidst.edumedia.ca/mad9014/nums.php";
+    let url = "https://davidst.edumedia.ca/mad9014/nums.php";
 
     if (numberofDigits <= 0 || numberofDigits > 10) {
         
